@@ -1,0 +1,36 @@
+# Optional overrides. BLE identity is hardcoded to P031 in code.
+
+[device]
+address = ""
+characteristic = ""
+
+[audio]
+source = "system"
+sample_rate = 44100
+chunk_size = 2048
+
+[reactive]
+update_hz = 16
+smoothing = 0.4
+gain = 1.6
+mode = "party"  # party | calm | darkside | festival | party2 | festival2 | spectrum | bass_pulse | energy
+delay_ms = 200
+lead_ms = 50
+intensity = 0.85
+
+[movie]
+update_hz = 18
+intensity = "cinema"     # subtle | cinema | immersive | maximum
+monitor = 1
+saturation = 0           # 0 = use preset
+min_brightness = 0.0     # 0 = true dark nights (dorm cinema)
+smoothing = 0            # 0 = preset attack/release; higher = slower
+edge_depth = 0.32        # outer frame weight (room bleed)
+blackbar = true
+blackbar_mode = "letterbox"
+highlight_mix = 0.25     # explosions / sun pull
+black_luma = 0.028       # below this → fade strip off
+r_gain = 1.0
+g_gain = 1.0
+b_gain = 1.0
+color_matrix = [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]

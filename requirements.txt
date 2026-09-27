@@ -1,0 +1,7 @@
+bleak>=0.22.0
+numpy>=1.26.0
+mss>=9.0.0
+cryptography>=42.0.0
+PyAudioWPatch>=0.2.12.6; platform_system=="Windows"
+sounddevice>=0.4.6; platform_system!="Windows"
+tomli>=2.0.0; python_version<"3.11"

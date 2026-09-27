@@ -1,0 +1,25 @@
+[project]
+name = "rgb-lights"
+version = "0.1.0"
+description = "Daybetter BLE RGB light controller with music-reactive modes (Bleak)"
+requires-python = ">=3.10"
+dependencies = [
+    "bleak>=0.22.0",
+    "numpy>=1.26.0",
+    "mss>=9.0.0",
+    "cryptography>=42.0.0",
+]
+
+[project.optional-dependencies]
+windows = ["PyAudioWPatch>=0.2.12.6"]
+audio = ["sounddevice>=0.4.6"]
+
+[project.scripts]
+rgb-lights = "rgb_lights.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["rgb_lights*"]
