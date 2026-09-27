@@ -1,4 +1,4 @@
-# RGB Lights (Daybetter)
+# Bluetooth LED Controller
 
 Control Daybetter Bluetooth LED strips from Python with [Bleak](https://github.com/hbldh/bleak), including music-reactive mode for audio playing on your PC.
 
